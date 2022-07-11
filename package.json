@@ -1,0 +1,26 @@
+{
+  "name": "potential-enigma",
+  "version": "1.0.0",
+  "description": "Generates README files",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garcia2697/potential-enigma.git"
+  },
+  "author": "Luis Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garcia2697/potential-enigma/issues"
+  },
+  "homepage": "https://github.com/garcia2697/potential-enigma#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {}
+}
