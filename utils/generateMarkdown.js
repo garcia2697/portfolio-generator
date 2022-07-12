@@ -1,20 +1,55 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+export default generateMarkdown => {
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+  // destructure page data by section
+  const {placeholder, ...data }=generateMarkdown;
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
 
-`;
-}
 
-module.exports = generateMarkdown;
+  return `
+
+  
+  PROJECT TITLE: 
+  <h1 align="center">${data.title}</h1>
+
+  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+  PROJECT DESCRIPTION: 
+  ## ${data.description}
+  
+
+  ## Table of Contents
+  - [DESCRIPTION]
+  - [TABLE OF CONTENTS]
+  - [Installation]
+  - [Usage]
+  - [License]
+  - [Credits]
+  - [Usage]
+  - [Question]
+  
+
+  Installation
+  ## ${data.install}
+
+  Usage
+  ## ${data.usage}
+
+  ## License
+  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+  <br />
+  This application is covered by the ${data.license} license. 
+
+  Contribution
+  ## This was made by https://github.com/${data.credit}
+
+  Tests
+  ##${data.tests}
+  
+
+  QUESTIONS
+  Feel free to reach me at ##${data.info}
+  My GitHub account is https://github.com/${data.credit}
+
+  `;
+};

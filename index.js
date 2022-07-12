@@ -1,12 +1,10 @@
 import fs from 'fs';
 import inquirer from 'inquirer';
-import generateRead from './src/page-template.js';
+import generateRead from './utils/generateMarkdown.js';
 
 
 // TODO: Include packages needed for this application
 
-// TODO: Create an array of questions for user input
-// const questions = [];
 
 const questions = () => {
   return inquirer.prompt([
