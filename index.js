@@ -109,7 +109,7 @@ questions()
   const pageREAD = generateRead(ReadData);
 
 
-  fs.writeFile('./dist/README.me', pageREAD, err => {
+  fs.writeFile('./dist/README.md', pageREAD, err => {
     if (err) {
       console.log(err);
       return;
