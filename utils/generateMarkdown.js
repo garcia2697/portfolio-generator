@@ -1,55 +1,54 @@
-
+// exports the following function
 export default generateMarkdown => {
 
   // destructure page data by section
   const {placeholder, ...data }=generateMarkdown;
 
 
+// READme format is below. Answers picked in the inquire prompt will be placed below.
+return `
+PROJECT TITLE: 
+#<h1 align="center">${data.title}</h1>
 
-  return `
+[![${data.license} license](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://lbesson.${data.license}-license.org/)
 
-  
-  PROJECT TITLE: 
-  #<h1 align="center">${data.title}</h1>
+PROJECT DESCRIPTION: 
+## ${data.description}
 
-  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-  PROJECT DESCRIPTION: 
-  ## ${data.description}
-  
+## Table of Contents
+- [DESCRIPTION]
+- [TABLE OF CONTENTS]
+- [Installation]
+- [Usage]
+- [License]
+- [Credits]
+- [Usage]
+- [Question]
 
-  ## Table of Contents
-  - [DESCRIPTION]
-  - [TABLE OF CONTENTS]
-  - [Installation]
-  - [Usage]
-  - [License]
-  - [Credits]
-  - [Usage]
-  - [Question]
-  
 
-  Installation
-  ## ${data.install}
+Installation
+## ${data.install}
 
-  Usage
-  ## ${data.usage}
+Usage
+## ${data.usage}
 
-  ## License
-  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
-  <br />
-  This application is covered by the ${data.license} license. 
+## License
+![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+<br />
+This application is covered by the ${data.license} license. 
 
-  Contribution
-  ## This was made by https://github.com/${data.credit}
+Contribution
+## This was made by https://github.com/${data.credit}
 
-  Tests
-  ##${data.tests}
-  
+Tests
+##${data.tests}
 
-  QUESTIONS
-  Feel free to reach me at ##${data.info}
-  My GitHub account is https://github.com/${data.credit}
 
-  `;
+QUESTIONS
+Feel free to reach me at ##${data.info}@gmail.com
+My GitHub account is https://github.com/${data.credit}
+
+
+`;
 };

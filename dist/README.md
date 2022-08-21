@@ -1,46 +1,44 @@
 
+PROJECT TITLE: 
+#<h1 align="center">portfolio-generator</h1>
 
-  
-  PROJECT TITLE: 
-  <h1 align="center">potential-enigma</h1>
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.MIT-license.org/)
 
-  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+PROJECT DESCRIPTION: 
+## Generates a readme file based off user input
 
-  PROJECT DESCRIPTION: 
-  ## Nah
-  
 
-  ## Table of Contents
-  - [DESCRIPTION]
-  - [TABLE OF CONTENTS]
-  - [Installation]
-  - [Usage]
-  - [License]
-  - [Credits]
-  - [Usage]
-  - [Question]
-  
+## Table of Contents
+- [DESCRIPTION]
+- [TABLE OF CONTENTS]
+- [Installation]
+- [Usage]
+- [License]
+- [Credits]
+- [Usage]
+- [Question]
 
-  Installation
-  ## no
 
-  Usage
-  ## no
+Installation
+## Clone repo, start the application with node index.js, and answer questions.
 
-  ## License
-  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
-  <br />
-  This application is covered by the MIT license. 
+Usage
+## Mainly used to generate Readmes
 
-  Contribution
-  ## This was made by https://github.com/garcia2697
+## License
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+<br />
+This application is covered by the MIT license. 
 
-  Tests
-  ##n/a
-  
+Contribution
+## This was made by https://github.com/garcia2697
 
-  QUESTIONS
-  Feel free to reach me at ##garcia
-  My GitHub account is https://github.com/garcia2697
+Tests
+##N/A
 
-  
+
+QUESTIONS
+Feel free to reach me at ##garcia2697@gmail.com
+My GitHub account is https://github.com/garcia2697
+
+

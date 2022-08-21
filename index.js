@@ -1,11 +1,12 @@
+
+// imports all necessary NodeJS packages
 import fs from 'fs';
 import inquirer from 'inquirer';
 import generateRead from './utils/generateMarkdown.js';
 
 
-// TODO: Include packages needed for this application
 
-
+// Questions will generate the 
 const questions = () => {
   return inquirer.prompt([
     {
@@ -50,12 +51,12 @@ const questions = () => {
     {
       type: 'input',
       name: 'usage',
-      message: 'Please enter installation instructions.(Required)',
+      message: 'Please enter usage information. (Required)',
       validate: installInput => {
         if (installInput) {
           return true;
         } else {
-          console.log('Please enter installation instructions!');
+          console.log('Please enter usage information!');
           return false;
         }
       }
@@ -64,12 +65,11 @@ const questions = () => {
     {
       type: 'list',
       name: 'license',
-      message: 'Please enter installation instructions.(Required)',
+      message: 'Please enter what license is being used.(Required)',
       choices: [
         "GNU",
         "ISC",
         "MIT",
-        "Mozilla",
         "Open"
     ]
     },
@@ -102,9 +102,10 @@ const questions = () => {
 };
 
 
-
+// starts the inquire prompst
 questions()
 
+// generates readme file using generatemarkdown file
 .then(ReadData => {
   const pageREAD = generateRead(ReadData);
 
@@ -121,11 +122,4 @@ questions()
 });
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
